@@ -52,11 +52,11 @@
 	},
 	"sources": {
 		"20241009/MsgValue.sol": {
-			"keccak256": "0xe67ebb65f411af49b29c6eb2c68771237898429d318e092cc1fd8e9121695e15",
+			"keccak256": "0xf20a0b5f500eeeca32268780574e57fd3d9d669e2f2f85603c9a7fbb92597790",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://47abc139aeb93decf6f0bedaf3ca20348e7ab59eeae20297d3e1679ef582ea16",
-				"dweb:/ipfs/QmPRhU3XEyyAQzEqQpcTRr2ALfdUEVjDFQ2qdCufUExfdd"
+				"bzz-raw://e1628d357a4a082a91aaaea2599a455d76c4117d11e1ab98773293d1c74dbfc6",
+				"dweb:/ipfs/QmaLyPSKceuf4S4dKkqo3VBYtGy8Gzew5kAjEHt2vzw8w7"
 			]
 		},
 		"https://github.com/NomicFoundation/hardhat/blob/main/packages/hardhat-core/console.sol": {

@@ -25,6 +25,7 @@ contract Caller{
     function inc() external {
        (bool _r,bytes memory data)= to.call(abi.encodeWithSignature("inc()"));
        require(_r,"execute fail");
+       console.logBytes(data);
     }
 
 

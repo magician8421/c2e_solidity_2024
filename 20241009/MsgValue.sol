@@ -49,7 +49,9 @@ contract CallDelegate{
     }
 
     function delegateCall() external payable{
-        address(call).delegatecall(abi.encodeWithSignature("msgFrom()"));
+     (bool _r,bytes memory data)=  address(call).delegatecall(abi.encodeWithSignature("msgFrom()"));
+      require(_r,"execute fail");
+      console.logBytes(data);
     }
 
 }
