@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "call",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"20241009/Call.sol": "SimpleCall"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"20241009/Call.sol": {
+			"keccak256": "0xe62b2179f09eda70bfc8a734c3eabaf32ebba86a823e7c6e088e869c76e9825b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ad4ea4e1413c411623b73acf0ff2a92ea9d7cbe0fb4b5cb046360ccf778fe2fa",
+				"dweb:/ipfs/QmVXZBCT9BCPPeGUR175SQs86zMrFL4TciqrqkdwCQUiSN"
+			]
+		}
+	},
+	"version": 1
+}
