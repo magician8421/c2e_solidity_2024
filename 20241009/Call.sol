@@ -8,9 +8,18 @@ contract Called{
         ++number;
     }
 
-    function setN(uint256 _number) external {
+    function setN(uint256 _number) external payable{
+       console.logBytes(msg.data);
         number=_number;
     }
+
+     function testLowLevelCall() pure external {
+        console.logBytes(abi.encodeWithSignature("setN(uint256)",100));
+    }
+
+    fallback() external payable { }
+
+    receive() external payable { }
 
 }
 
@@ -23,26 +32,33 @@ contract Caller{
 
     
     function inc() external {
-       (bool _r,bytes memory data)= to.call(abi.encodeWithSignature("inc()"));
+       (bool _r,bytes memory data)= to.call(abi.encodeWithSignature("inc()"))   ;
        require(_r,"execute fail");
        console.logBytes(data);
     }
 
 
-    function setN(uint256 _number) external {
+    function setN(uint256 _number) external payable returns(uint256) {
       (bool _r,bytes memory data)= to.call(abi.encodeWithSignature("setN(uint256)",_number));
-       require(_r,"execute fail");
        console.logBytes(data);
+       require(_r,"execute fail");
+       return msg.value;
+
     }
 
     function delegateSetN(uint256 _number) external {
-      (bool _r,bytes memory data)= to.delegatecall(abi.encodeWithSignature("setN(uint256)",_number));
+      (bool _r,bytes memory data)= to.delegatecall(abi.encodeWithSignature("testLowLevelCall()"));
        require(_r,"execute fail");
        console.logBytes(data);
     }
-     function staticSetN() view external {
-      (bool _r,bytes memory data)= to.staticcall(abi.encodeWithSignature("number()"));
+
+    function staticSetN() view external {
+      (bool _r,bytes memory data)= to.staticcall(abi.encodeWithSignature("testLowLevelCall()"));
        require(_r,"execute fail");
        console.logBytes(data);
+    }
+
+    function testLowLevelCall() pure external {
+        console.logBytes(abi.encodeWithSignature("inc()"));
     }
 }

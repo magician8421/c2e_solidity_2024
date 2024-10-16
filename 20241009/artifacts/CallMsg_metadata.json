@@ -8,7 +8,18 @@
 			{
 				"inputs": [],
 				"name": "msgFrom",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
 				"stateMutability": "payable",
 				"type": "function"
 			}
@@ -41,11 +52,11 @@
 	},
 	"sources": {
 		"20241009/MsgValue.sol": {
-			"keccak256": "0xf20a0b5f500eeeca32268780574e57fd3d9d669e2f2f85603c9a7fbb92597790",
+			"keccak256": "0xc00ba8e1adb0d3108787f06334797ac26ae23d5c31f081184129910b5fac98c5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e1628d357a4a082a91aaaea2599a455d76c4117d11e1ab98773293d1c74dbfc6",
-				"dweb:/ipfs/QmaLyPSKceuf4S4dKkqo3VBYtGy8Gzew5kAjEHt2vzw8w7"
+				"bzz-raw://e9916106946114d0e3290fc172afd17faa31e9e4a134e2ff1267cfd453fdfaa1",
+				"dweb:/ipfs/QmQ7jaBb17mZeZC76iSX4vwuVn8Kt159rjKumkdpJdojW7"
 			]
 		},
 		"https://github.com/NomicFoundation/hardhat/blob/main/packages/hardhat-core/console.sol": {

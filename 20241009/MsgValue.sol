@@ -10,11 +10,11 @@ contract CallMsg{
 // 0x7eecd3b6
 // 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 //EOA->CallMsg
-    function msgFrom() external  payable {
-        console.logAddress(msg.sender);
-        console.logUint(msg.value);
-        console.logBytes(msg.data);
-        console.logAddress(tx.origin);
+    function msgFrom() external  payable returns(address,bytes32) {
+            console.logAddress(msg.sender);
+            console.logUint(msg.value);
+            console.logBytes(msg.data);
+            console.logAddress(tx.origin);
     }
 
 }
@@ -37,6 +37,7 @@ contract CallContract{
 
 }
 
+//0xb4a88c4086055b8f546911BaaED28b7CEE134EF9
 // 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 // 100
 // 0x7eecd3b6

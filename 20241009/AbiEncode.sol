@@ -36,17 +36,17 @@ contract TestAbiEncode{
         console.logUint(u);
         console.logString(s);
 
-        //  _encode=abi.encodePacked(uint16(1234),"1234");
-        // (uint256 u2,string memory s2)=abi.decode(_encode,(uint256,string)); 
-        // console.logUint(u2);
-        // console.logString(s2);
+        _encode=abi.encodePacked(uint16(1234),"1234");
+        (uint256 u2,string memory s2)=abi.decode(_encode,(uint256,string)); 
+         console.logUint(u2);
+         console.logString(s2);
     }
 
     function testAbiMethod(uint a,bytes2 b) external {
 
     }
 
-    //函数签名=函数名+完整的参数定义
+    //函数签名=函数名+函数的入参
     function testAbiSignature() pure external {
         console.logBytes(abi.encodeWithSignature("testAbiMethod(uint256,bytes2)",1,bytes2(0x1234)));
     }

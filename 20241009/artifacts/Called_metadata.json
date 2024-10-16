@@ -6,6 +6,10 @@
 	"output": {
 		"abi": [
 			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
 				"inputs": [],
 				"name": "inc",
 				"outputs": [],
@@ -35,8 +39,19 @@
 				],
 				"name": "setN",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testLowLevelCall",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -67,11 +82,11 @@
 	},
 	"sources": {
 		"20241009/Call.sol": {
-			"keccak256": "0x2b63e9dc8b6624dacb53d37c7ef9f8fc63ec69578eca93f7a5f9ee2462b3bbc3",
+			"keccak256": "0x5b9e634e02950668c4babdb1e098e8f3bed81b60129991fe394361fc4de17eca",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://86c6482eb5f3c5cfcb1d90a7a4eac6df2adedf446cebff097b7e53d2bb285ace",
-				"dweb:/ipfs/QmPKtyArJv8ziBUZ7jeCt8RPWidTS6138zodFVS9QWefpX"
+				"bzz-raw://6c47ad8b7b33809b8107386639a8f8005c5428dfd5e94f471d8241a8e72708e5",
+				"dweb:/ipfs/QmVBx8KTyUbrwnpYC1cNt8x4RJyQAMu1AayvrqCMEfJWza"
 			]
 		},
 		"https://github.com/NomicFoundation/hardhat/blob/main/packages/hardhat-core/console.sol": {
