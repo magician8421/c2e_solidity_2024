@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"20241018/Vulnerable.sol": "VulnerableBank"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"20241018/Vulnerable.sol": {
+			"keccak256": "0xf2ddbc76a691ac770e865f11e8e997d0964dc0c3483e793f22faacd50d74bcec",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://291674c341b0a41b8362b39dd962839e4719ce9b2e488546bab981a7ccc69a71",
+				"dweb:/ipfs/QmS11sKnsW7u2HKnrVFuSDF94Ls1Jqzt8qU9bDAC1hzdPj"
+			]
+		}
+	},
+	"version": 1
+}

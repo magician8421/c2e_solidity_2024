@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract VulnnerableBank",
+						"name": "_bank",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "hack",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"20241018/VulnerableBank.sol": "Hack"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"20241018/VulnerableBank.sol": {
+			"keccak256": "0xdbde9b0703eeaf04e018c726eb5a36204ddce2beb5e54418c0d0d65981da9630",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8cdf6942756a0e973a1bc45b04c9b258686afef3adc9985e977d7f9fc85449a0",
+				"dweb:/ipfs/QmQu6oGAjC9PAafFcBk954PweBWzYdjZhxXsCjp3jact4b"
+			]
+		}
+	},
+	"version": 1
+}
